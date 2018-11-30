@@ -10,10 +10,10 @@
         </tr>
         <?php
             foreach($candidatos as $candidato){
-                echo'<tr>'
-                    echo'<td>'.$candidato['nombre'].'</td>'
-                    echo'<td>'.$candidato[votos].'</td>'
-                echo'</tr>'
+                echo'<tr>';
+                    echo'<td>'.$candidato['nombre'].'</td>';
+                    echo'<td>'.$candidato[votos].'</td>';
+                echo'</tr>';
             }
         ?>
         </table>
