@@ -76,9 +76,15 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
+<<<<<<< HEAD
 	'username' => 'root',
 	'password' => 'root',
 	'database' => 'votacion',
+=======
+	'username' => 'alumno',
+	'password' => 'alumno',
+	'database' => 'delegados',
+>>>>>>> 8b0f981e5cfedc9748dc666774806b8a2105fa92
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
