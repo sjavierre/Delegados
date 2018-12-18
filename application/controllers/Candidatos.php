@@ -16,6 +16,6 @@ class Candidatos extends CI_Controller {
 	{
 		$data = $this->input->post();
 		$this->candidato->insertar($data);
-		redirect(base_url().'candidatos');
+		redirect(base_url().'grupos/votos/'.$data['grupo']);
 	}
 }

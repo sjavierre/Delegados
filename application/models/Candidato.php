@@ -17,6 +17,9 @@ class Candidato extends CI_Model {
 
         public function insertar($data){
     		$this->db->query('insert into candidatos (nombre, email) values ("'.$data['nombre'].'", "'.$data['email'].'")');
+            $query = $this->db->query('select * from candidatos order by id desc limit 1');
+            $candidato = $query->result_array()[0];
+            $this->db->query('insert into grupos_candidatos (candidato, grupo) values ("'.$candidato['id'].'", "'.$data['grupo'].'")');
         }
 
         public function borrar($id){

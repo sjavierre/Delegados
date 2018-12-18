@@ -132,8 +132,5 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-<<<<<<< HEAD
-$autoload['model'] = array('grupo','candidato');
-=======
+
 $autoload['model'] = array('candidato','grupo');
->>>>>>> 8b0f981e5cfedc9748dc666774806b8a2105fa92
